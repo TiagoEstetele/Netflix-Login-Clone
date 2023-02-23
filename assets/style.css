@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background-image: url(background.jpg);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.background::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.header img {
+    width: 180px;
+    padding: 1rem 1rem 1rem 2.5rem;
+    position: absolute;
+}
+
+.login__container {
+    position: relative;
+    max-width: 450px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0, 0.75 );
+    transform: translatey(15%);
+    border-radius: .2rem;
+}
+
+.login__content {
+    padding: 4rem 4rem 5rem 4rem;
+}
+
+.login__content h2 {
+    padding: 0 0 2rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.login__content input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: .3rem;
+    margin-bottom: 20px;
+    background-color: #333333;
+}
+
+.login__content input::placeholder {
+    font-size: 17px;
+    padding: 1rem 0 1rem 1.2rem;
+    color: #8c8c8c;
+}
+
+.login__content button {
+    background-color: red;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: .2rem;
+}
+
+.login__suport {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login__remember {
+    display: flex;
+    margin-top: 20px;
+    gap: .4rem;
+}
+
+.login__remember input {
+    width: 16px;
+    height: 16px;
+    background-color: #b3b3b3;
+}
+
+.login__remember label {
+    color: #b3b3b3;
+}
+
+.login__needhelp a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.login__needhelp a:hover {
+    text-decoration: underline;
+}
+
+.login__infos {
+    margin-top: 4rem;
+}
+
+.login__infos-1 {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+}
+
+.login__infos-2 {
+    color: #b3b3b3;
+    font-size: .9rem;
+    margin-top: .8rem;
+}
+
+.login__infos-1 a, .login__infos-2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #333333;
+    display: flex;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 740px) {
+    .background {
+        background-image: url(#);
+       background-color: black;
+    }
+
+    .login__container {
+       max-width: 100%;
+       padding: 0 0 0 2.2rem;
+    }
+
+    .login__content {
+        padding: 0;
+        width: 90%;
+    }
+}
+
+
